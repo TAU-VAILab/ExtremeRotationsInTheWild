@@ -4,3 +4,4 @@ val_logs/
 metadata/
 *.pyc
 *__pycache__/
+.gitmodules
