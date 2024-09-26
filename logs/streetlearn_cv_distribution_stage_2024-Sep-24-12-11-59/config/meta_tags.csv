@@ -1,0 +1,10 @@
+config,configs/streetlearn_cv_distribution_stage.yaml
+world_size,1
+dist_url,tcp://127.0.0.1:9991
+dist_backend,nccl
+distributed,False
+rank,0
+gpu,
+resume,False
+pretrained,/home/hanahenb/ExtremeRotation_VaryingIllumination/logs/streetlearn_cv_distribution_overlap_vit_loftr_seg_kp_empty_pose_features_2024-Feb-26-09-44-40/checkpoints/epoch_12.pt
+test_run,False

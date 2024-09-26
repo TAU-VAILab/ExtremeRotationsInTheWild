@@ -1,0 +1,9 @@
+[submodule "LoFTR"]
+	path = dust3r
+	url = https://github.com/hana-bez/LoFTR.git
+	branch = cvpr
+
+[submodule "semantic-segmentation"]
+	path = semantic-segmentation
+	url = https://github.com/sithu31296/semantic-segmentation.git
+	branch = main

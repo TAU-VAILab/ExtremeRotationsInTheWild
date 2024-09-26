@@ -1,0 +1,66 @@
+data:
+  type: datasets.pairwise_dataloader
+  stage_type: 'd_fov' #choose from ['90_fov','d_fov', 'd_im','ELP']
+  num_workers: 10
+  height: 256
+  train:
+    data_type: "panorama" #choose from ['panorama','colmap']
+    batch_size: 20
+    path: "./" #path to img directory
+    pairs_file: "metadata/new_npys/streetlearn/train_pair_rotation_overlap_wo_df_w_addition.npy" #path to pairs file
+
+
+
+  val:
+    data_type: "panorama" #choose from ['panorama','colmap']
+    batch_size: 20
+    path: "/scratch/data_hanabezalel/streetlearn_df_new" #path to img directory
+    pairs_file: "/home/hanahenb/ExtremeRotation_VaryingIllumination/metadata/new_npys/streetlearn/test_pair_rotation_df_w_fov_overlap_none.npy" #path to pairs file
+
+    
+
+
+viz:
+  log_freq: 10
+  viz_freq: 75000
+  save_freq: 30000
+  val_freq: 10000
+
+# validation options
+val:
+  run_val_during_training: True
+  save_val_results: False
+  eval_classification: False
+  eval_sampling: False
+  batch_size: 100
+
+trainer:
+  type: trainers.vit__rotation_trainer
+  epochs: 45
+  seed: 100
+  pairwise_type: 'cost_volume'
+  classification: True
+  rotation_parameterization: False
+  randomization : 0.3
+  top_picks: 0
+
+  opt:
+    type: 'adam'
+    lr: 1e-4  #  use default learning rate
+    beta1: 0.9
+    beta2: 0.999
+    momentum: 0.9  # for SGD
+    weight_decay: 0.
+    scheduler: 'linear'
+    step_epoch: 100
+    starting_epoch: 100
+  
+
+models:
+  rotationnet:
+    type: models.dino_vit_w_empty_tokens
+    block: 1 # 0 basic, 1 bottleneck
+    num_blocks: 1-1
+
+
+

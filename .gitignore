@@ -1,0 +1,6 @@
+val_logs/
+.history/
+.vscode/
+metadata/
+*.pyc
+*__pycache__/
