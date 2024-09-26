@@ -1,5 +1,5 @@
 [submodule "LoFTR"]
-	path = dust3r
+	path = LoFTR
 	url = https://github.com/hana-bez/LoFTR.git
 	branch = cvpr
 
