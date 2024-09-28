@@ -21,3 +21,21 @@ data, code, and trained models.
 </br>
 
 # Getting Started
+
+## Dependencies 
+    conda env create -f ./tools/environment.yml
+    conda activate rota_cuda_
+</br>
+
+## Getting the repo
+    git clone https://github.com/TAU-VAILab/ExtremeRotationsInTheWild.git
+    cd ExtremeRotationsInTheWild
+</br>
+
+# Dataset
+
+
+# Pretrained Model
+
+# Training
+# Cite
