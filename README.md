@@ -43,7 +43,7 @@ Download [StreetLearn](https://sites.google.com/view/streetlearn/dataset) datase
 Metadata files about the training and test image pairs are available in the following google drive: [link]().
 Download the `metadata.zip` file, unzip it and put it under the project root directory.
 
-we used this script [`PanoBasic/pano2perspective_script.m`](https://github.com/RuojinCai/PanoBasic.git)) that extracts perspective images from an input panorama. 
+we used this script [`PanoBasic/pano2perspective_script.m`](https://github.com/RuojinCai/PanoBasic.git) that extracts perspective images from an input panorama. 
 Before running it , you need to modify the path to the datasets and metadata files in the script.
 
 ## Pretrained Model 
@@ -65,7 +65,7 @@ python test.py configs/ELP/streetlearn_cv_distribution_selp.yaml \
 python test.py configs/ELP/streetlearn_cv_distribution_welp.yaml \
     --pretrained pretrained/final_model.pt
 
-
+```
 ## Training
 
 ```bash
@@ -85,7 +85,7 @@ python train.py configs/d_im/streetlearn_cv_distribution_d_im.yaml --resume --pr
 
 #ELP
 python train.py configs/ELP/streetlearn_cv_distribution_welp.yaml --resume --pretrained <checkpoint_filename>
-
+```
 
 
 # Cite
