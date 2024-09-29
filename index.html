@@ -1,7 +1,239 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Extreme Rotation Estimation in the Wild" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Extreme Rotation Estimation in the Wild</title>
+</head>
+
+<body class="container" style="max-width:1050px">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- heading -->
+  <div>
+
+    <!-- title -->
+    <div class='row mt-5 mb-3'>
+      <div class='col text-center'>
+        <p class="h1 font-weight-normal">Extreme Rotation Estimation in the Wild</p>
+      </div>
+    </div>
+
+    <!-- authors -->
+    <div class="col text-center h6 font-weight-bold mb-2 ">
+      <span class="col-md-4 col-xs-6 pb-2"><a href="">Hana Bezalel</a><sup>1</sup></span>
+	  <span class="col-md-4 col-xs-6 pb-2" ><a href="">Dotan Ankri</a><sup>1</sup></span>
+	  <span class="col-md-4 col-xs-6 pb-2" ><a href="https://www.cs.cornell.edu/~ruojin/">Ruojin Cai</a><sup>2</sup></span>
+      <span class="col-md-4 col-xs-6 pb-2"><a href="https://www.elor.sites.tau.ac.il/">Hadar Averbuch-Elor</a><sup>1,2</sup></span>
+    </div>
+	
+
+    <!-- affiliations -->
+    <div class="col text-center h6 font-weight-bold mb-2 ">
+      <span class="author-block"><sup>1</sup>Tel Aviv University,</span>
+	  <span class="author-block"><sup>2</sup>Cornell University</span>
+    </div>
+
+    <!-- links -->
+    <div class='row mb-4'>
+      <div class='col text-center'>
+        <a href="" target="_blank" class="btn btn-outline-primary" role="button">
+          <i class="ai ai-arxiv"></i>
+          arXiv
+        </a>
+        <a href="https://github.com/TAU-VAILab/ExtremeRotationsInTheWild.git" target="_blank" class="btn btn-outline-primary"
+          role="button">
+          <i class="fa fa-github"></i>
+          Code
+        </a>
+		<a href="" target="_blank"
+            class="btn btn-outline-primary" role="button">
+            <i class="fa fa-database"></i>
+            Dataset
+        </a>
+        <a href="" target="_blank" class="btn btn-outline-primary" role="button">
+            <i class="fa fa-eye"></i>
+            Interactive Visualization
+        </a>
+      </div>
+    </div>
+
+    <!-- teaser -->
+    <div class='row justify-content-center'>
+
+        <video loop autoplay  muted width="95%"  class="result-video">
+            <source src="webpage_assets/teaser0001-0100.mp4" type="video/mp4">
+        </video>
+
+      <div class='text-center col-md-12 col-sm-12 col-xs-12 align-middle mt-1'>
+        <p class='h6'>
+          <em>Given a pair of images captured in the wild —
+		   e.g. under arbitrary illumination and intrinsic camera parameters— and in extreme settings (with little or no overlap),
+		   such as the images of the Dam Square in Amsterdam depicted in red and blue boxes above, 
+		   can we leverage 3D priors to estimate the relative 3D rotation between the images? </em>
+        </p>
+        <hr>
+      </div>
+    </div>
+
+
+    <!-- method -->
+
+    <!-- viz -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p class="h4 font-weight-bold title">Abstract</p>
+        <p>
+		  We present a technique and benchmark dataset for estimating the relative 3D orientation between a pair of 
+		  Internet images captured in an extreme setting, where the images have limited or non-overlapping field of views. 
+		  Prior work targeting extreme rotation estimation assume constrained 3D environments and emulate perspective images by cropping regions from panoramic views. 
+		  However, real images captured in the wild are highly diverse, exhibiting variation in both appearance and camera intrinsics. 
+		  In this work, we propose a Transformer-based method for estimating relative rotations in extreme real-world settings, 
+		  and contribute the ExtremeLandmarkPairs dataset, assembled from scene-level Internet photo collections. 
+		  Our evaluation demonstrates that our approach succeeds in estimating the relative rotations in a wide variety of extreme-view Internet image pairs, 
+		  outperforming various baselines, including dedicated rotation estimation techniques and contemporary 3D reconstruction methods. 
+
+        </p>
+
+        <hr>
+      </div>
+    </div>
+	
+	
+	<!-- overview -->
+	<div>
+      <div class="row">
+        <div class='col-md-12 col-sm-12 col-xs-12'>
+          <p class='h4 font-weight-bold title'>Overview of our Method</p>
+          <p class="ack">
+				<div class='col-md-12 col-sm-12 col-xs-12 mt-3'>
+                    <img src="webpage_assets/overview_new.JPG" class="img-fluid" alt="overview">
+                </div> 
+				We design a network architecture optimized for estimating 3D relative rotation from pairs of images captured in challenging, real-world conditions.
+				Given a pair of input Internet images, we extract image features using pretrained <a href=https://zju3dv.github.io/loftr/>LoFTR</a>. These features
+				are combined with auxiliary channels, including keypoint and pairwise matches masks, and  <a href=https://github.com/NVlabs/SegFormer/>segmentation maps</a> (visualized on the bottom
+				left). These image features are reshaped into tokens and concatenated with Euler angle position embeddings, which are then processed by
+				our Rotation Estimation Transformer module. The output Euler angle tokens and averaged image tokens are concatenated and processed
+				by MLPs to predict the probability distribution of Euler angles, representing the relative 3D rotation between the input images.				
+          </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+	<!-- Dataset  -->
+	<div>
+        <div class="row">
+            <div class='col-md-9 col-sm-9 col-xs-12 justify'>
+                <p class='h4 font-weight-bold'>ExtremeLandmarkPairs Dataset</p>
+                <p>
+                In this paper, we present a new approach that tackles the problem of extreme rotation estimation in the wild. 
+				Internet (i.e., in the wild) images may vary due to a wide range of factors, including transient objects, 
+				weather conditions, time of day, and the cameras’ intrinsic parameters. 
+				To explore this problem, we introduce a new dataset, ExtremeLandmarkPairs(ELP), assembled from publicly-available scene-level 
+				Internet image collections.  
+				This dataset contains a training set with nearly 34K non-overlapping pairs originating from over 2K unique landmarks. 
+				For evaluation, we create two test sets, to separately examine image pairs captured in a single camera 
+				setting with constant illumination (sELP) and image pairs captured in the wild (wELP) 
+                </p>
+  
+            </div>
+            <div class='col-md-3 col-sm-3 col-xs-12 text-center'>
+                <div class="row mt-3">
+                    <img src="webpage_assets/Dataset.JPG" alt="stroop effect example 2" class="img-thumbnail stroop-img"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- Progressive Learning Scheme  -->
+	<div>
+        <hr>
+        <div class="row">
+            <div class='col-md-9 col-sm-9 col-xs-12 justify'>
+                <p class='h4 font-weight-bold'>Progressive Learning Scheme</p>
+                <p>
+                We observe that the set of real extreme-view image pairs is limited, 
+				as Internet datasets are typically scene-centric, with nearby cameras commonly capturing overlapping views. 
+				Therefore, to facilitate training, we propose a progressive learning scheme that leverages and augments images cropped from panoramic views,
+				allowing for gradually generalizing the model onto real Internet data. In particular, we construct datasets with varying field of views, 
+				that better resemble the distribution of real data, and perform image-level appearance augmentations by leveraging recent advancements in text-to-image
+				Diffusion models (specifically <a href=https://www.timothybrooks.com/instruct-pix2pix>InstructPix2Pix</a>).
+                </p>
+  
+            </div>
+            <div class='col-md-3 col-sm-3 col-xs-12 text-center'>
+                <div class="row mt-2">
+                    <img src="webpage_assets/im_aug.JPG" alt="stroop effect example 2" class="img-thumbnail stroop-img"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- interactive visualization  -->
+	<div>
+	  <hr>
+      <div class="row">
+        <div class='col-md-12 col-sm-12 col-xs-12'>
+          <p class='h4 font-weight-bold title'>Interactive Visualization</p>
+          <p class="ack">
+				See our <a href="">interactive visualization</a> for results of all models on the sELP and wELP test sets.
+				<div class='col-md-12 col-sm-12 col-xs-12 mt-3'>
+                    <img src="webpage_assets/results_vis.JPG" class="img-fluid" alt="overview">
+                </div>
+				We visualize the results of our model over different overlap levels, where the images on the left serve as the reference points, 
+				and their coordinate system detemines the relative rotation, which defines the images on the right.
+				The ellipsoids representing the ground truth are color-coded to match their respective images, with the estimated relative rotation illustrated
+				by a cyan dashed line. As illustrated by the examples above, our method can accurately predict relative rotations for diverse image pairs
+				containing varying appearances and intrinsic parameters.
+
+          </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- ack -->
+    <div>
+      <div class="row">
+        <div class='col-md-12 col-sm-12 col-xs-12'>
+          <p class='h4 font-weight-bold title'>Acknowledgements</p>
+          <p class="ack">
+            The dataset is constructed from Internet image pairs from the  dataset
+			<a href=https://www.cs.cornell.edu/projects/megadepth/>MegaDepth</a>,
+			<a href=https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3/>Cambridge Landmarks</a> and
+			<a href=https://megascenes.github.io/>MegaScenes</a> datasets.
+
+			The code implementation is based on the official repository of <a href=https://github.com/RuojinCai/ExtremeRotation_code>Extreme Rotation</a>
+			Code from following works has also been used: <a href=https://zju3dv.github.io/loftr/>LoFTR</a>,
+			<a href=https://github.com/naver/dust3r>Dust3R</a>,<a href=https://github.com/sithu31296/semantic-segmentation>semantic-segmentation</a>.
+          </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+
+    <!-- citation -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p class="h4 font-weight-bold title">Citation</p>
+        <pre><code>...</code></pre>
+      </div>
+    </div>
+
 </body>
+
 </html>
