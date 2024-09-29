@@ -16,7 +16,7 @@ estimating the relative rotations in a wide variety of extreme-view Internet ima
 including dedicated rotation estimation techniques and contemporary 3D reconstruction methods. We will release our
 data, code, and trained models.
 <p align="center">
-<img src="g" width="90%"/>  
+<img src="webpage_assets/overview_new.JPG" width="90%"/>  
 </p>
 </br>
 
