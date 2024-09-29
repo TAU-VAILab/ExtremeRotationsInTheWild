@@ -7,3 +7,6 @@
 	path = semantic-segmentation
 	url = https://github.com/sithu31296/semantic-segmentation.git
 	branch = main
+[submodule "dinov2"]
+	path = dinov2
+	url = https://github.com/facebookresearch/dinov2.git
