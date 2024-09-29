@@ -7,7 +7,7 @@ data:
     data_type: "panorama" #choose from ['panorama','colmap']
     batch_size: 20
     path: "/scratch/data_hanabezalel/streetlearn_512/streetlearn" #path to img directory
-    pairs_file: "home/hanahenb/ExtremeRotation_VaryingIllumination/metadata/new_npys/streetlearn/train_pair_rotation_overlap_wo.npy" #path to pairs file
+    pairs_file: "/home/hanahenb/ExtremeRotation_VaryingIllumination/metadata/new_npys/streetlearn/train_pair_rotation_overlap_wo.npy" #path to pairs file
 
 
 
@@ -36,7 +36,7 @@ val:
 
 trainer:
   type: trainers.vit__rotation_trainer
-  epochs: 45
+  epochs: 10
   seed: 100
   pairwise_type: 'cost_volume'
   classification: True

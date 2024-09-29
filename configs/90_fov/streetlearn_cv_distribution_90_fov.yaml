@@ -52,8 +52,8 @@ trainer:
     momentum: 0.9  # for SGD
     weight_decay: 0.
     scheduler: 'linear'
-    step_epoch: 10
-    starting_epoch: 28
+    step_epoch: 100
+    starting_epoch: 100
   
 
 models:
