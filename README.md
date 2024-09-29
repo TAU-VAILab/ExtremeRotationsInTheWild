@@ -21,7 +21,7 @@ data, code, and trained models.
 </p>
 </br>
 
-# Getting Started
+## Getting Started
 
 ## Dependencies 
     conda env create -f ./tools/environment.yml
@@ -86,9 +86,9 @@ python train.py configs/d_im/streetlearn_cv_distribution_d_im.yaml --resume --pr
 #ELP
 python train.py configs/ELP/streetlearn_cv_distribution_welp.yaml --resume --pretrained <checkpoint_filename>
 ```
-# Cite
+## Cite
 
-#### Acknowledgment
+## Acknowledgment
 The dataset is constructed from Internet image pairs from the [MegaDepth](https://www.cs.cornell.edu/projects/megadepth/),
 [Cambridge Landmarks](https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3/),
 [MegaScenes](https://megascenes.github.io/) datasets.
