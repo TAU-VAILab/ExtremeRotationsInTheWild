@@ -21,8 +21,6 @@ data, code, and trained models.
 </p>
 </br>
 
-## Getting Started
-
 ## Dependencies 
     conda env create -f ./tools/environment.yml
     conda activate rota_cuda_
