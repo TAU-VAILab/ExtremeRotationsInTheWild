@@ -1,12 +1,20 @@
 # Extreme Rotation Estimation in the Wild
-This repository contains a PyTorch implementation of the paper:
-> **Extreme Rotation Estimation in the Wild**<br>
-> Hana Bezalel , Dotan Ankri, Ruojin Cai, Hadar Averbuch-Elor<br>
-> Tel Aviv University<br>
+[Hana Bezalel]()¹,
+[Dotan Ankri]()¹, 
+[Ruojin Cai](https://www.cs.cornell.edu/~ruojin/)², 
+[Hadar Averbuch-Elor](https://www.elor.sites.tau.ac.il/)¹²
+
+¹[Tel Aviv University](https://english.tau.ac.il/),
+²[Cornell University](https://www.cornell.edu/)
+
 **[project page](https://tau-vailab.github.io/ExtremeRotationsInTheWild) | [paper]()**
 
->**Introduction** <br>
->We present a technique and benchmark dataset for estimating the relative 3D orientation between a pair of In
+This repository contains a PyTorch implementation of the paper:
+Extreme Rotation Estimation in the Wild
+
+
+## Introduction
+We present a technique and benchmark dataset for estimating the relative 3D orientation between a pair of In
 ternet images captured in an extreme setting, where the images have limited or non-overlapping field of views.
 Prior work targeting extreme rotation estimation assume constrained 3D environments and emulate perspective images
 by cropping regions from panoramic views. However, real images captured in the wild are highly diverse, exhibiting
