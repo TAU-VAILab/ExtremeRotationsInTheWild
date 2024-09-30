@@ -62,8 +62,7 @@ Before running it , you need to modify the path to the datasets and metadata fil
 
 ## Pretrained Model 
 
-Pretrained models are be available in the following link: [link]().
-To use the pretrained models, download the `pretrained.zip` file, unzip it and put it under the project root directory.
+Pretrained models are be available in the following link: [link](https://mailtauacil-my.sharepoint.com/:f:/g/personal/hanahenb_mail_tau_ac_il/EpLnPoL_cdxPkqIx--qPft0Bn0LBWNhJRBEC8b0jKqzUXQ?e=0EWocI).
 
 #### Testing the pretrained model:
 The following commands test the performance of the pre-trained models in the rotation estimation task.
