@@ -37,6 +37,10 @@ data, code, and trained models.
 ## Getting the repo
     git clone https://github.com/TAU-VAILab/ExtremeRotationsInTheWild.git
     cd ExtremeRotationsInTheWild
+    mkdir LoFTR/pretrained
+    #download LoFTR model file [outdoor_ds.ckpt](https://drive.google.com/drive/folders/1xu2Pq6mZT5hmFgiYMBT9Zt8h1yO-3SIp)
+    mkdir semantic-segmentation/checkpoints
+    #download SegFormer model file [segformer.b3.ade.pth](https://drive.google.com/file/d/1-OmW3xRD3WAbJTzktPC-VMOF5WMsN8XT/view)
 </br>
 
 ## Dataset
