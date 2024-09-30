@@ -1,8 +1,8 @@
-val_logs/
+ExtremeRotationInTheWild/val_logs/
 .history/
 .vscode/
-metadata/
+ExtremeRotationInTheWild/metadata/
 *.pyc
 *__pycache__/
-logs/
+ExtremeRotationInTheWild/logs/
 
