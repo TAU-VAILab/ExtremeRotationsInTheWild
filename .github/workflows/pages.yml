@@ -1,0 +1,63 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches: ["main"]  # or "master" if that's your default branch
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug environment
+        run: |
+          echo "Working directory:"
+          pwd
+          echo "GitHub workspace: $GITHUB_WORKSPACE"
+          echo "GitHub ref: $GITHUB_REF"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
+
+      - name: List files after checkout
+        run: |
+          echo "Repository contents:"
+          ls -la
+          echo "Total files:"
+          find . -type f | wc -l
+
+      - name: Create .nojekyll
+        run: |
+          touch .nojekyll
+          echo "Created .nojekyll file"
+          ls -la .nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: List files before upload
+        run: |
+          echo "Files to be uploaded:"
+          find . -type f -not -path '*/\.*'
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
+
+      - name: Output deployment URL
+        if: success()
+        run: echo "Deployed to ${{ steps.deployment.outputs.page_url }}"
