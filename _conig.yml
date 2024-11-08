@@ -1,0 +1,10 @@
+title: Your Project Name
+description: Project description
+baseurl: "/ExtremeRotationsInTheWild"
+url: "https://tau-vailab.github.io"
+
+# Important for submodules
+include:
+  - "semantic-segmentation"
+  - "LoFTR"
+  - "dinov2"
