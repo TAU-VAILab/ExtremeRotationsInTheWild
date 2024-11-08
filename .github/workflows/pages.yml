@@ -1,4 +1,4 @@
-name: Deploy HTML Site
+name: Deploy HTML Site to GitHub Pages
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Assuming your HTML files are in the root directory
+        publish_dir: ./  # Assuming your index.html is in the root directory
