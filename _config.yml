@@ -1,0 +1,4 @@
+exclude:
+  - LoFTR
+  - dinov2
+  - semantic-segmentation
