@@ -1,7 +1,7 @@
 [submodule "LoFTR"]
 	path = LoFTR
 	url = https://github.com/hana-bez/LoFTR.git
-	branch = cvpr
+	branch = LoFTR_w_feat
 
 [submodule "semantic-segmentation"]
 	path = semantic-segmentation
