@@ -181,52 +181,42 @@
       </div>
       <hr>
     </div>
+	<!--
 	<!-- Dataset  -->
 	<div>
-        <div class="row">
-            <div class='col-md-9 col-sm-9 col-xs-12 justify'>
-                <p class='h4 font-weight-bold'>ExtremeLandmarkPairs Dataset</p>
-                <p>
-                In this paper, we present a new approach that tackles the problem of extreme rotation estimation in the wild. 
-				Internet (i.e., in the wild) images may vary due to a wide range of factors, including transient objects, 
-				weather conditions, time of day, and the cameras’ intrinsic parameters. 
-				To explore this problem, we introduce a new dataset, ExtremeLandmarkPairs(ELP), assembled from publicly-available scene-level 
-				Internet image collections.  
-				This dataset contains a training set with nearly 34K non-overlapping pairs originating from over 2K unique landmarks, constructed from <a href=https://megascenes.github.io/>MegaScenes</a> dataset. 
-				Additionally, for evaluation, we have created two test sets, to separately examine image pairs captured in a single camera 
-				setting with constant illumination (sELP)and image pairs captured in the wild (wELP).  These test sets are respectively sourced from the
-				<a href=https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3/>Cambridge Landmarks</a> and 
-			    <a href=https://www.cs.cornell.edu/projects/megadepth/>MegaDepth</a> datasets.
-				ExtremeLandmarkPairs(ELP) dataset  can be accessed via <a href=https://drive.google.com/drive/folders/1Mi8WEjpVM7m8ZhOYG_pS9Zu02ApyU424>link</a>.
-				
-				Test sets statistics:
+		<div class="row">
+			<div class='col-md-7 col-sm-7 col-xs-12 justify'>
+				<p class='h4 font-weight-bold'>ExtremeLandmarkPairs Dataset</p>
+				<p>
+					In this paper, we present a new approach that tackles the problem of extreme rotation estimation in the wild. 
+					Internet (i.e., in the wild) images may vary due to a wide range of factors, including transient objects, 
+					weather conditions, time of day, and the cameras' intrinsic parameters. 
+					To explore this problem, we introduce a new dataset, ExtremeLandmarkPairs(ELP), assembled from publicly-available scene-level 
+					Internet image collections.  
+					This dataset contains a training set with nearly 34K non-overlapping pairs originating from over 2K unique landmarks, constructed from <a href="https://megascenes.github.io/">MegaScenes</a> dataset. 
+					Additionally, for evaluation, we have created two test sets, to separately examine image pairs captured in a single camera 
+					setting with constant illumination (sELP)and image pairs captured in the wild (wELP). These test sets are respectively sourced from the
+					<a href="https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3/">Cambridge Landmarks</a> and 
+					<a href="https://www.cs.cornell.edu/projects/megadepth/">MegaDepth</a> datasets.
+					ExtremeLandmarkPairs(ELP) dataset can be accessed via <a href="https://drive.google.com/drive/folders/1Mi8WEjpVM7m8ZhOYG_pS9Zu02ApyU424">link</a>.
 				</p>
-				<div class='row justify-content-center'>
-					<div class="dataset" style="width: 300px">
-						<img src="webpage_assets/sELP_statistics.JPG" class="img-fluid rounded mx-auto d-block dataset_img" >
-						<p class="dataset_desc" style="width: 300px">sELP</p>
+			</div>
+			
+			<div class='col-md-5 col-sm-5 col-xs-12'>
+				<div style="display: flex; align-items: flex-start; gap: 10px;"> <!-- Changed align-items to flex-start -->
+					<div class="mt-5" style="flex-shrink: 0;">
+						<img src="webpage_assets/Dataset.JPG" alt="stroop effect example 2" class="img-thumbnail stroop-img"
+							style="width: 250px;">
 					</div>
-					<div class="dataset" style="width: 300px">
-						<img src="webpage_assets/wELP_statistics.JPG" class="img-fluid rounded mx-auto d-block dataset_img" >
-						<p class="dataset_desc" style="width: 300px">wELP</p>
-					</div>
+					<p style="font-size: 13px; margin: 0; flex: 1; margin-top: 48px;"> <!-- Added margin-top to match mt-5 -->
+						In this figure, we can observe the camera distribution for the Vatican, Rome scene from the ExtremeLandmarkPairs Dataset.
+						We have constructed a dataset of real perspective image pairs with predominant rotational motion shown
+						in (b) and (c) from the dense imagery reconstruction in (a).
+					</p>
 				</div>
-  
-            </div>
-            <div class='col-md-3 col-sm-3 col-xs-12'>
-                <div class="row mt-3">
-                    <img src="webpage_assets/Dataset.JPG" alt="stroop effect example 2" class="img-thumbnail stroop-img"
-                        width="100%">
-                </div>
-				<p  style="font-size: 14px;">
-                In this figure, we can observe the camera distribution for the Vatican, Rome scene from the ExtremeLandmarkPairs Dataset
-				We have constructed a dataset of real
-				perspective image pairs with predominant rotational motion shown
-				in (b) and (c) from the dense imagery reconstruction in (a).</p>
-				
-            </div>
-        </div>
-    </div>
+			<div>
+		</div>
+	</div>
 	
 	<!-- Results  -->
 	<div>
@@ -262,15 +252,17 @@
       </div>
       <hr>
     </div>
+	
+	<!-- 
 
-
-    <!-- citation -->
+  
     <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <p class="h4 font-weight-bold title">Citation</p>
         <pre><code>...</code></pre>
       </div>
     </div>
+	-->
 
 </body>
 
