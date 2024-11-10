@@ -106,7 +106,7 @@ The dataset is constructed from Internet image pairs from the [MegaDepth](https:
 [Cambridge Landmarks](https://www.repository.cam.ac.uk/items/53788265-cb98-42ee-b85b-7a0cbc8eddb3/),
 [MegaScenes](https://megascenes.github.io/) datasets.
 
-The code implementation is based on the official repository of [Extreme Rotation](https://github.com/RuojinCai/ExtremeRotation_code)
+The code implementation is based on the official repository of [Extreme Rotation](https://github.com/RuojinCai/ExtremeRotation_code).
 Code from following works has also been used: [LoFTR](https://zju3dv.github.io/loftr/),[Dust3R](https://github.com/naver/dust3r),
 [semantic-segmentation](https://github.com/sithu31296/semantic-segmentation),[DinoV2](https://github.com/facebookresearch/dinov2)
 .
