@@ -36,10 +36,13 @@
             margin: 10px;
         }
 
-        #results_img {
-            margin-top: 20px;
-        }
-        
+		#results_img img {
+			margin-top: 20px;
+			max-width: 100%; 
+			display: block;
+			margin: 0 auto; 
+			}
+</style>
     </style>
 </head>
 
@@ -59,13 +62,13 @@
         <div class='row mt-3 mb-3'>
             <div class='col text-center'>
                 <p class="h2 font-weight-normal">Extreme Rotation Estimation in the Wild</p>
-                <!--<p class="h3 font-weight-normal"><a href="../index.html">(Homepage)</a></p>-->
+                <p class="h3 font-weight-normal"><a href="../index.html">(Homepage)</a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <p>
+                <p style="text-align: justify;">
                     Below we show results of the comparable models discussed in our paper, on both sELP and wELP test sets.
                     Select the test set and model that you would like to use, and click "Previous" and "Next" to browse
                     through the results.
@@ -120,7 +123,7 @@
                 </select> &nbsp;&nbsp;&nbsp;&nbsp; 
             </div>
 
-            <div class="col-md-7 col-sm-7 col-xs-7 res">
+            <div class="col-md-12 col-sm-12 col-xs-12 res">
                 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#/" class="previous" onclick="previous()">&laquo; Previous</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Item <input type="number" id="item_number" onchange="numchange()"> / <span id="c2"></span>
@@ -129,7 +132,7 @@
                 <br>
                 <div id="results"></div>
             </div>
-            <div class="col-md-7 col-sm-7 col-xs-7 res">
+            <div class="col-md-12 col-sm-12 col-xs-12 res">
                 <div id="results_img"></div>
             </div>
         </div>
