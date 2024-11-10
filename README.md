@@ -108,7 +108,7 @@ The dataset is constructed from Internet image pairs from the [MegaDepth](https:
 
 The code implementation is based on the official repository of [Extreme Rotation](https://github.com/RuojinCai/ExtremeRotation_code)
 Code from following works has also been used: [LoFTR](https://zju3dv.github.io/loftr/),[Dust3R](https://github.com/naver/dust3r),
-[semantic-segmentation](https://github.com/sithu31296/semantic-segmentation),[DinoV2](https://github.com/facebookresearch/dinov2).
+[semantic-segmentation](https://github.com/sithu31296/semantic-segmentation),[DinoV2](https://github.com/facebookresearch/dinov2)
 .
 
 
