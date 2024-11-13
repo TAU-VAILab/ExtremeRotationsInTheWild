@@ -7,7 +7,7 @@
 ¹[Tel Aviv University](https://english.tau.ac.il/),
 ²[Cornell University](https://www.cornell.edu/)
 
-**[project page](https://tau-vailab.github.io/ExtremeRotationsInTheWild) | [paper]()**
+**[project page](https://tau-vailab.github.io/ExtremeRotationsInTheWild) | [paper](https://arxiv.org/abs/2411.07096)**
 
 This repository contains a PyTorch implementation of the paper:
 Extreme Rotation Estimation in the Wild
